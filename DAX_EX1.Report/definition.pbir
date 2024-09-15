@@ -1,0 +1,9 @@
+{
+  "version": "4.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../DAX_EX1.SemanticModel"
+    },
+    "byConnection": null
+  }
+}
