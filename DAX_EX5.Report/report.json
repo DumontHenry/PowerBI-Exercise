@@ -1,0 +1,275 @@
+{
+  "config": "{\"version\":\"5.57\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU08\",\"version\":\"5.57\",\"type\":2}},\"activeSectionIndex\":9,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU08",
+            "path": "BaseThemes/CY24SU08.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "EX : Comparer Q-1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "38f0e56411cbe8fe17f7",
+      "ordinal": 9,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"777eb31e19d353980a0d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":104.76190476190476,\"y\":67.61904761904759,\"z\":2,\"width\":552.3809523809524,\"height\":652.3809523809524}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Calendrier.Annee\",\"active\":true},{\"queryRef\":\"Calendrier.AnneeMois\",\"active\":true}],\"Values\":[{\"queryRef\":\"Transactions.MtVentes\"},{\"queryRef\":\"Transactions.Vente écart Q en %\"},{\"queryRef\":\"Transactions.MtVentes Diff Q-1\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendrier\",\"Type\":0},{\"Name\":\"t\",\"Entity\":\"Transactions\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Annee\"},\"Name\":\"Calendrier.Annee\",\"NativeReferenceName\":\"Annee\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"AnneeMois\"},\"Name\":\"Calendrier.AnneeMois\",\"NativeReferenceName\":\"AnneeMois\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"MtVentes\"},\"Name\":\"Transactions.MtVentes\",\"NativeReferenceName\":\"MtVentes\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"MtVentes Diff Q-1\"},\"Name\":\"Transactions.MtVentes Diff Q-1\",\"NativeReferenceName\":\"MtVentes Diff Q-11\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Vente écart Q en %\"},\"Name\":\"Transactions.Vente écart Q en %\",\"NativeReferenceName\":\"Vente écart Q en %1\"}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"Calendrier.Annee\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendrier\"}},\"Property\":\"Annee\"}}],\"isPinned\":true},{\"queryRefs\":[\"Calendrier.AnneeMois\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'2028'\"}}],\"isToggled\":true},{\"identityValues\":[{\"Literal\":{\"Value\":\"'2023'\"}}],\"isToggled\":true},{\"identityValues\":[{\"Literal\":{\"Value\":\"'2024'\"}}],\"isToggled\":true}]}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"values\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}}}},{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Transactions\"}},\"Property\":\"MtVentes Diff Q-1\"}},\"FillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#FF0303'\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}},\"value\":{\"Literal\":{\"Value\":\"0D\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"Transactions.MtVentes Diff Q-1\"}}],\"columnHeaders\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}}}}],\"rowHeaders\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Comparaison des ventes par rapport au trimetre précédent'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 652.38,
+          "width": 552.38,
+          "x": 104.76,
+          "y": 67.62,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"9d3e5c9fdbe437faf718\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":68.12324929971989,\"z\":1,\"width\":127.2829131652661,\"height\":501.96078431372547}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Calendrier.Annee\",\"active\":true},{\"queryRef\":\"Calendrier.AnneeTrimestre\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendrier\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Annee\"},\"Name\":\"Calendrier.Annee\",\"NativeReferenceName\":\"Annee\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"AnneeTrimestre\"},\"Name\":\"Calendrier.AnneeTrimestre\",\"NativeReferenceName\":\"AnneeTrimestre\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendrier\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Annee\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'2024'\"}}]]}}}]}}}}]},\"cachedFilterDisplayItems\":[{\"id\":{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendrier\"}},\"Property\":\"Annee\"}},\"Right\":{\"Literal\":{\"Value\":\"'2024'\"}}}}},\"displayName\":\"2024\"}]}}",
+          "filters": "[]",
+          "height": 501.96,
+          "width": 127.28,
+          "x": 0.00,
+          "y": 68.12,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"aa5c8ad190f27a113045\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1280,\"height\":68.86549707602339}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Analyse des Ventes \",\"textStyle\":{\"fontSize\":\"32px\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"padding\":[{\"properties\":{\"top\":{\"expr\":{\"Literal\":{\"Value\":\"5D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 68.87,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"c17b1b24c5f1a1917955\",\"layouts\":[{\"id\":0,\"position\":{\"x\":657.1428571428571,\"y\":68.25396825396825,\"z\":3,\"width\":571.4285714285714,\"height\":458.73015873015873}}],\"singleVisual\":{\"visualType\":\"waterfallChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Calendrier.AnneeTrimestre\",\"active\":true}],\"Y\":[{\"queryRef\":\"Transactions.Vente écart Q en %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Transactions\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calendrier\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Vente écart Q en %\"},\"Name\":\"Transactions.Vente écart Q en %\",\"NativeReferenceName\":\"Vente écart Q en %1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"AnneeTrimestre\"},\"Name\":\"Calendrier.AnneeTrimestre\",\"NativeReferenceName\":\"AnneeTrimestre\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Vente écart Q en %\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}],\"valueAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}},\"titleFontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"legend\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopCenter'\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelOrientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'Auto'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter749e5bebd4b419136986\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendrier\"}},\"Property\":\"AnneeMois\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 458.73,
+          "width": 571.43,
+          "x": 657.14,
+          "y": 68.25,
+          "z": 3.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Comparer M-1 %",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "3d000e0d83464c881d13",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"52e35e12c31b1371d467\",\"layouts\":[{\"id\":0,\"position\":{\"x\":86.27986348122867,\"y\":191.12627986348122,\"z\":0,\"width\":728.4641638225256,\"height\":392.0819112627986,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Transactions.Vente écart %\"}],\"Category\":[{\"queryRef\":\"Calendrier.AnneeMois\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Transactions\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calendrier\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Vente écart %\"},\"Name\":\"Transactions.Vente écart %\",\"NativeReferenceName\":\"Vente écart %\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"AnneeMois\"},\"Name\":\"Calendrier.AnneeMois\",\"NativeReferenceName\":\"AnneeMois\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"AnneeMois\"}}}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[{\"name\":\"f0098a1e672095eff96a\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendrier\"}},\"Property\":\"AnneeMois\"}},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 392.08,
+          "width": 728.46,
+          "x": 86.28,
+          "y": 191.13,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"a431cd5d33b32c174939\",\"layouts\":[{\"id\":0,\"position\":{\"x\":86.27986348122867,\"y\":0,\"z\":1000,\"width\":266.48464163822524,\"height\":79.72696245733788,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Calendrier.Annee\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendrier\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Annee\"},\"Name\":\"Calendrier.Annee\",\"NativeReferenceName\":\"Annee\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendrier\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Annee\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'2026'\"}}]]}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 79.73,
+          "width": 266.48,
+          "x": 86.28,
+          "y": 0.00,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "4961265d3c084a19d85f",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"3eec807c2e87ebcbc6d1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":360.52187260168836,\"y\":68.76438986953184,\"z\":2000,\"width\":273.09286262471215,\"height\":127.70529547198771,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Transactions.Vt An cumule\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Transactions\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Vt An cumule\"},\"Name\":\"Transactions.Vt An cumule\",\"NativeReferenceName\":\"Vt An cumule\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Vt An cumule\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 127.71,
+          "width": 273.09,
+          "x": 360.52,
+          "y": 68.76,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"44aa465022d06d1acf44\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":371.32770529547196,\"height\":175.84036838066,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Calendrier.Annee\",\"active\":true},{\"queryRef\":\"Calendrier.AnneeMois\"}],\"Values\":[{\"queryRef\":\"Transactions.MtVentes\"},{\"queryRef\":\"Transactions.Vt An cumule\"},{\"queryRef\":\"Transactions.Vte An cumule A-1\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendrier\",\"Type\":0},{\"Name\":\"t\",\"Entity\":\"Transactions\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Annee\"},\"Name\":\"Calendrier.Annee\",\"NativeReferenceName\":\"Annee\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"MtVentes\"},\"Name\":\"Transactions.MtVentes\",\"NativeReferenceName\":\"MtVentes\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Vt An cumule\"},\"Name\":\"Transactions.Vt An cumule\",\"NativeReferenceName\":\"Vt An cumule\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"AnneeMois\"},\"Name\":\"Calendrier.AnneeMois\",\"NativeReferenceName\":\"AnneeMois\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Vte An cumule A-1\"},\"Name\":\"Transactions.Vte An cumule A-1\",\"NativeReferenceName\":\"Vte An cumule A-1\"}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"Calendrier.Annee\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendrier\"}},\"Property\":\"Annee\"}}],\"isPinned\":true},{\"queryRefs\":[\"Calendrier.AnneeMois\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"columnHeaders\":[{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"titleAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 175.84,
+          "width": 371.33,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"5651715c24fd89b7a8d0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":371.32770529547196,\"y\":0,\"z\":1000,\"width\":195.48733691481195,\"height\":68.76438986953184,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Calendrier.AnneeMois\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendrier\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"AnneeMois\"},\"Name\":\"Calendrier.AnneeMois\",\"NativeReferenceName\":\"AnneeMois\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 68.76,
+          "width": 195.49,
+          "x": 371.33,
+          "y": 0.00,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Comparer A-1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "58833e24e1d547f996a5",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"80f26634f37468139910\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.829351535836178,\"y\":0,\"z\":0,\"width\":507.84982935153585,\"height\":719.7269624573379,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Calendrier.Annee\",\"active\":true},{\"queryRef\":\"Calendrier.AnneeMois\",\"active\":true}],\"Values\":[{\"queryRef\":\"Transactions.MtVentes\"},{\"queryRef\":\"Transactions.Vt An cumule\"},{\"queryRef\":\"Transactions.MtVentes A-1\"},{\"queryRef\":\"Transactions.Vte An cumule A-1\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendrier\",\"Type\":0},{\"Name\":\"t\",\"Entity\":\"Transactions\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Annee\"},\"Name\":\"Calendrier.Annee\",\"NativeReferenceName\":\"Annee\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"AnneeMois\"},\"Name\":\"Calendrier.AnneeMois\",\"NativeReferenceName\":\"AnneeMois\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"MtVentes\"},\"Name\":\"Transactions.MtVentes\",\"NativeReferenceName\":\"MtVentes\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Vt An cumule\"},\"Name\":\"Transactions.Vt An cumule\",\"NativeReferenceName\":\"Vt An cumule\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"MtVentes A-1\"},\"Name\":\"Transactions.MtVentes A-1\",\"NativeReferenceName\":\"MtVentes A-1\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Vte An cumule A-1\"},\"Name\":\"Transactions.Vte An cumule A-1\",\"NativeReferenceName\":\"Vte An cumule A-1\"}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"Calendrier.Annee\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendrier\"}},\"Property\":\"Annee\"}}],\"isPinned\":true},{\"queryRefs\":[\"Calendrier.AnneeMois\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'2023'\"}}],\"isToggled\":true},{\"identityValues\":[{\"Literal\":{\"Value\":\"'2024'\"}}],\"isToggled\":true}]}}],\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 719.73,
+          "width": 507.85,
+          "x": 9.83,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Comparer M-1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "6af53243f15ca8042405",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"d5b340a7aa46202a28fb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.64824120603015,\"y\":0,\"z\":0,\"width\":419.1624790619765,\"height\":276.5829145728643,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Values\":[{\"queryRef\":\"Transactions.MtVentes\"},{\"queryRef\":\"Transactions.MtVentes Diff M-1\"}],\"Rows\":[{\"queryRef\":\"Calendrier.Annee\",\"active\":true},{\"queryRef\":\"Calendrier.AnneeMois\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Transactions\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calendrier\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"MtVentes Diff M-1\"},\"Name\":\"Transactions.MtVentes Diff M-1\",\"NativeReferenceName\":\"MtVentes Diff M-1\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"MtVentes\"},\"Name\":\"Transactions.MtVentes\",\"NativeReferenceName\":\"MtVentes\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Annee\"},\"Name\":\"Calendrier.Annee\",\"NativeReferenceName\":\"Annee\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"AnneeMois\"},\"Name\":\"Calendrier.AnneeMois\",\"NativeReferenceName\":\"AnneeMois\"}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"Calendrier.Annee\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendrier\"}},\"Property\":\"Annee\"}}],\"isPinned\":true},{\"queryRefs\":[\"Calendrier.AnneeMois\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'2023'\"}}],\"isToggled\":true},{\"identityValues\":[{\"Literal\":{\"Value\":\"'2024'\"}}],\"isToggled\":true}]}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"values\":[{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Transactions\"}},\"Property\":\"MtVentes Diff M-1\"}},\"FillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#D64550'\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}},\"value\":{\"Literal\":{\"Value\":\"0D\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"Transactions.MtVentes Diff M-1\"}}]}}}",
+          "filters": "[]",
+          "height": 276.58,
+          "width": 419.16,
+          "x": 9.65,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Ventes cumul total",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "86564d11d173c2490d73",
+      "ordinal": 8,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"4ca46cd636d2695d7e83\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":48.05460750853242,\"z\":0,\"width\":520.9556313993174,\"height\":498.0204778156996,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Calendrier.Annee\",\"active\":true},{\"queryRef\":\"Calendrier.AnneeTrimestre\",\"active\":true}],\"Values\":[{\"queryRef\":\"Transactions.MtVentes\"},{\"queryRef\":\"Transactions.MtVentes Total cumulé\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendrier\",\"Type\":0},{\"Name\":\"t\",\"Entity\":\"Transactions\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Annee\"},\"Name\":\"Calendrier.Annee\",\"NativeReferenceName\":\"Annee\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"MtVentes\"},\"Name\":\"Transactions.MtVentes\",\"NativeReferenceName\":\"MtVentes\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"MtVentes Total cumulé\"},\"Name\":\"Transactions.MtVentes Total cumulé\",\"NativeReferenceName\":\"MtVentes Total cumulé\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"AnneeTrimestre\"},\"Name\":\"Calendrier.AnneeTrimestre\",\"NativeReferenceName\":\"AnneeTrimestre\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Annee\"}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"Calendrier.Annee\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendrier\"}},\"Property\":\"Annee\"}}],\"isPinned\":true},{\"queryRefs\":[\"Calendrier.AnneeTrimestre\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'2023'\"}}],\"isToggled\":true},{\"identityValues\":[{\"Literal\":{\"Value\":\"'2024'\"}}],\"isToggled\":true}]}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"values\":[{\"properties\":{\"backColorSecondary\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}}}}]},\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'AlternatingRowsNew'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 498.02,
+          "width": 520.96,
+          "x": 0.00,
+          "y": 48.05,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Ventes A-1 V",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "aa41ad7d326bc871c715",
+      "ordinal": 5,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"e6e7dfe492af51312e12\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.829351535836178,\"y\":0,\"z\":0,\"width\":488.19112627986345,\"height\":719.7269624573379,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Values\":[{\"queryRef\":\"Transactions.MtVentes\"},{\"queryRef\":\"Transactions.MtVentes cumule T\"}],\"Rows\":[{\"queryRef\":\"Calendrier.Annee\",\"active\":true},{\"queryRef\":\"Calendrier.AnneeMois\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Transactions\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calendrier\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"MtVentes cumule T\"},\"Name\":\"Transactions.MtVentes cumule T\",\"NativeReferenceName\":\"MtVentes cumule T\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Annee\"},\"Name\":\"Calendrier.Annee\",\"NativeReferenceName\":\"Annee\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"AnneeMois\"},\"Name\":\"Calendrier.AnneeMois\",\"NativeReferenceName\":\"AnneeMois\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"MtVentes\"},\"Name\":\"Transactions.MtVentes\",\"NativeReferenceName\":\"MtVentes\"}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"Calendrier.Annee\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendrier\"}},\"Property\":\"Annee\"}}],\"isPinned\":true},{\"queryRefs\":[\"Calendrier.AnneeMois\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'2024'\"}}],\"isToggled\":true},{\"identityValues\":[{\"Literal\":{\"Value\":\"'2023'\"}}],\"isToggled\":true}]}}],\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 719.73,
+          "width": 488.19,
+          "x": 9.83,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Ventes A-1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "b1127a7b70b17e647141",
+      "ordinal": 4,
+      "visualContainers": [],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Page 3",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "b428b7de1fe5b096b88b",
+      "ordinal": 6,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"6ed1e32d43a01b004d65\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.829351535836178,\"y\":0,\"z\":0,\"width\":572.2866894197952,\"height\":662.9351535836178,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Calendrier.Annee\"},{\"queryRef\":\"Transactions.MtVentes\"},{\"queryRef\":\"Transactions.MtVentes S49-S51\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendrier\",\"Type\":0},{\"Name\":\"t\",\"Entity\":\"Transactions\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Annee\"},\"Name\":\"Calendrier.Annee\",\"NativeReferenceName\":\"Annee\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"MtVentes S49-S51\"},\"Name\":\"Transactions.MtVentes S49-S51\",\"NativeReferenceName\":\"MtVentes S49-S51\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"MtVentes\"},\"Name\":\"Transactions.MtVentes\",\"NativeReferenceName\":\"MtVentes\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"grid\":[{\"properties\":{}}],\"columnHeaders\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}}}]},\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'ContrastAlternatingRows'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 662.94,
+          "width": 572.29,
+          "x": 9.83,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Vente A – 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "d7b6b36671967245caf0",
+      "ordinal": 7,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"748dfc7ab1e8c5116246\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.829351535836178,\"y\":0,\"z\":0,\"width\":371.3310580204778,\"height\":719.7269624573379,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Calendrier.Annee\",\"active\":true},{\"queryRef\":\"Calendrier.AnneeMois\",\"active\":true}],\"Values\":[{\"queryRef\":\"Transactions.MtVentes\"},{\"queryRef\":\"Transactions.MtVentes 12 mois glissants\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendrier\",\"Type\":0},{\"Name\":\"t\",\"Entity\":\"Transactions\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Annee\"},\"Name\":\"Calendrier.Annee\",\"NativeReferenceName\":\"Annee\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"MtVentes\"},\"Name\":\"Transactions.MtVentes\",\"NativeReferenceName\":\"MtVentes\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"MtVentes 12 mois glissants\"},\"Name\":\"Transactions.MtVentes 12 mois glissants\",\"NativeReferenceName\":\"MtVentes 12 mois glissants\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"AnneeMois\"},\"Name\":\"Calendrier.AnneeMois\",\"NativeReferenceName\":\"AnneeMois\"}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"Calendrier.Annee\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendrier\"}},\"Property\":\"Annee\"}}],\"isPinned\":true},{\"queryRefs\":[\"Calendrier.AnneeMois\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'2023'\"}}],\"isToggled\":true},{\"identityValues\":[{\"Literal\":{\"Value\":\"'2024'\"}}],\"isToggled\":true}]}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"layout\":{\"expr\":{\"Literal\":{\"Value\":\"'Compact'\"}}}}}],\"values\":[{\"properties\":{\"backColorSecondary\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}}}}]},\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'AlternatingRowsNew'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 719.73,
+          "width": 371.33,
+          "x": 9.83,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
