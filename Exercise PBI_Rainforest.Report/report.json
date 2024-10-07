@@ -1,0 +1,336 @@
+{
+  "config": "{\"version\":\"5.57\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU08\",\"version\":\"5.58\",\"type\":2}},\"activeSectionIndex\":5,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU08",
+            "path": "BaseThemes/CY24SU08.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F3B4DC'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"49D\"}}}}}]}}",
+      "displayName": "Page 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "1a851629b34b2c7e3907",
+      "ordinal": 5,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"8a01de7278ce99aed649\",\"layouts\":[{\"id\":0,\"position\":{\"x\":736,\"y\":144,\"z\":0,\"width\":512,\"height\":432,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Size\":[{\"queryRef\":\"Sum(activité_2019.quantité)\"}],\"Category\":[{\"queryRef\":\"activité_2019.ville - pays\",\"active\":true}],\"Series\":[{\"queryRef\":\"activité_2019.pays\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"activité_2019\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"quantité\"}},\"Function\":0},\"Name\":\"Sum(activité_2019.quantité)\",\"NativeReferenceName\":\"Somme de quantité\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"ville - pays\"},\"Name\":\"activité_2019.ville - pays\",\"NativeReferenceName\":\"ville - pays\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"pays\"},\"Name\":\"activité_2019.pays\",\"NativeReferenceName\":\"pays\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"mapStyles\":[{\"properties\":{\"mapTheme\":{\"expr\":{\"Literal\":{\"Value\":\"'grayscale'\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"activité_2019\"}},\"Property\":\"quantité\"}},\"Function\":0}},\"FillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#41a4ff'\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#12239E'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}]}}}",
+          "filters": "[]",
+          "height": 432.00,
+          "width": 512.00,
+          "x": 736.00,
+          "y": 144.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"efc29ae0dfadc33817fc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":560,\"y\":47.99999999999999,\"z\":1,\"width\":128,\"height\":304,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"activité_2019.code_pays\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"activité_2019\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"code_pays\"},\"Name\":\"activité_2019.code_pays\",\"NativeReferenceName\":\"code_pays\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 304.00,
+          "width": 128.00,
+          "x": 560.00,
+          "y": 48.00,
+          "z": 1.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "2. Analyse des ventes par région",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "1d047a2f8620324af9b8",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"15e6e7e53b90641b0222\",\"layouts\":[{\"id\":0,\"position\":{\"x\":598.7829614604462,\"y\":0,\"z\":1,\"width\":660.1217038539554,\"height\":720}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(activité_2019.quantité)\"}],\"Category\":[{\"queryRef\":\"activité_2019.ville\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"activité_2019\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"quantité\"}},\"Function\":0},\"Name\":\"Sum(activité_2019.quantité)\",\"NativeReferenceName\":\"Quantités vendues\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"ville\"},\"Name\":\"activité_2019.ville\",\"NativeReferenceName\":\"ville\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"quantité\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(activité_2019.quantité)\":{\"displayName\":\"Quantités vendues\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"categoryAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}},\"titleFontSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"concatenateLabels\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"valueAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"titleFontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 720.00,
+          "width": 660.12,
+          "x": 598.78,
+          "y": 0.00,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"6ede42e817bf55c822d8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":598.7829614604462,\"height\":483.4077079107505}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(activité_2019.quantité)\"}],\"Category\":[{\"queryRef\":\"activité_2019.pays\",\"active\":true},{\"queryRef\":\"activité_2019.ville\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"activité_2019\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"quantité\"}},\"Function\":0},\"Name\":\"Sum(activité_2019.quantité)\",\"NativeReferenceName\":\"Somme de quantité\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"pays\"},\"Name\":\"activité_2019.pays\",\"NativeReferenceName\":\"pays\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"ville\"},\"Name\":\"activité_2019.ville\",\"NativeReferenceName\":\"ville\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"pays\"}}},{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"ville\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 483.41,
+          "width": 598.78,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "4. Trouver les bons visuels",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "34303aad38f8753a2af3",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"487c42fd1f39e3d54f52\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.223123732251521,\"y\":0,\"z\":0,\"width\":568.1135902636917,\"height\":43.81338742393509}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"1 - Quelle est la répartition des ventes de produits par couleur ?\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"14pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 43.81,
+          "width": 568.11,
+          "x": 10.22,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"f25aad2cbbc8b51727ec\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":43.81338742393509,\"z\":1,\"width\":975.578093306288,\"height\":544.7464503042596}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(activité_2019.quantité)\"}],\"Category\":[{\"queryRef\":\"activité_2019.couleur\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"activité_2019\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"quantité\"}},\"Function\":0},\"Name\":\"Sum(activité_2019.quantité)\",\"NativeReferenceName\":\"Somme de quantité\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"couleur\"},\"Name\":\"activité_2019.couleur\",\"NativeReferenceName\":\"couleur\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"quantité\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 544.75,
+          "width": 975.58,
+          "x": 0.00,
+          "y": 43.81,
+          "z": 1.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Cours",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "349563389a714afa347a",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"114bef2e5acf1f651d3f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":262,\"width\":501,\"height\":244,\"z\":1,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(activité_2019.quantité)\"}],\"Category\":[{\"queryRef\":\"activité_2019.date.Variation.Date Hierarchy.Month\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"activité_2019\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"quantité\"}},\"Function\":0},\"Name\":\"Sum(activité_2019.quantité)\",\"NativeReferenceName\":\"Sum of quantité\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Name\":\"Variation\",\"Property\":\"date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"activité_2019.date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"date Month\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"enableDetailDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"lineStyles\":[{\"properties\":{\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"markerShape\":{\"expr\":{\"Literal\":{\"Value\":\"'square'\"}}},\"markerColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}},\"lineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'dashed'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Quantité par mois'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 244.00,
+          "width": 501.00,
+          "x": 0.00,
+          "y": 262.00,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"3e9b6622a76be2732e8f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":500.9118541033435,\"height\":244.13373860182372,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"activité_2019.pays\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(activité_2019.quantité)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"activité_2019\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"pays\"},\"Name\":\"activité_2019.pays\",\"NativeReferenceName\":\"pays\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"quantité\"}},\"Function\":0},\"Name\":\"Sum(activité_2019.quantité)\",\"NativeReferenceName\":\"quantité vendu\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"quantité\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(activité_2019.quantité)\":{\"displayName\":\"quantité vendu\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Quantité par pays'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"activité_2019\"}},\"Property\":\"pays\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"activité_2019\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"pays\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"quantité\"}},\"Function\":0}}}],\"Top\":5}}},\"Type\":2},{\"Name\":\"a\",\"Entity\":\"activité_2019\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"pays\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 244.13,
+          "width": 500.91,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"9c83d3584009893a575a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":526.4864864864865,\"y\":291.8918918918919,\"z\":3,\"width\":515.6756756756756,\"height\":282.16216216216213,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Group\":[{\"queryRef\":\"activité_2019.nom_produit\",\"active\":true}],\"Values\":[{\"queryRef\":\"Sum(activité_2019.quantité)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"activité_2019\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"nom_produit\"},\"Name\":\"activité_2019.nom_produit\",\"NativeReferenceName\":\"nom_produit\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"quantité\"}},\"Function\":0},\"Name\":\"Sum(activité_2019.quantité)\",\"NativeReferenceName\":\"Sum of quantité\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"activité_2019\"}},\"Property\":\"quantité\"}},\"Function\":0}},\"FillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#29DA32'\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#E51717'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Répartition des familles de produit vendus'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"activité_2019\"}},\"Property\":\"nom_produit\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"activité_2019\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"nom_produit\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"quantité\"}},\"Function\":0}}}],\"Top\":20}}},\"Type\":2},{\"Name\":\"a\",\"Entity\":\"activité_2019\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"nom_produit\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 282.16,
+          "width": 515.68,
+          "x": 526.49,
+          "y": 291.89,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"e25536851f8062b988e3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":500.9118541033435,\"y\":0,\"z\":2,\"width\":541.7629179331307,\"height\":291.79331306990883,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Size\":[{\"queryRef\":\"Sum(activité_2019.quantité)\"}],\"Series\":[{\"queryRef\":\"activité_2019.pays\"}],\"Category\":[{\"queryRef\":\"activité_2019.ville\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"activité_2019\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"pays\"},\"Name\":\"activité_2019.pays\",\"NativeReferenceName\":\"pays\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"quantité\"}},\"Function\":0},\"Name\":\"Sum(activité_2019.quantité)\",\"NativeReferenceName\":\"Sum of quantité\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"ville\"},\"Name\":\"activité_2019.ville\",\"NativeReferenceName\":\"ville\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"mapStyles\":[{\"properties\":{\"mapTheme\":{\"expr\":{\"Literal\":{\"Value\":\"'aerial'\"}}}}}],\"mapControls\":[{\"properties\":{\"showZoomButtons\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showLassoButton\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Quantité par pays'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 291.79,
+          "width": 541.76,
+          "x": 500.91,
+          "y": 0.00,
+          "z": 2.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "1. Quiz: choix des visuels",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "b8f69e40b06310777688",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"03c3349da046dc3f9e8c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.223123732251521,\"y\":452.7383367139959,\"z\":3,\"width\":587.0993914807302,\"height\":267.2616632860041}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(activité_2019.prix_unitaire)\"}],\"Category\":[{\"queryRef\":\"activité_2019.date.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"activité_2019.date.Variation.Date Hierarchy.Month\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"activité_2019\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"prix_unitaire\"}},\"Function\":0},\"Name\":\"Sum(activité_2019.prix_unitaire)\",\"NativeReferenceName\":\"Somme de prix_unitaire\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Name\":\"Variation\",\"Property\":\"date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"activité_2019.date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"date Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Name\":\"Variation\",\"Property\":\"date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"activité_2019.date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"date Month\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 267.26,
+          "width": 587.10,
+          "x": 10.22,
+          "y": 452.74,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"09aa3388f2ddaef18646\",\"layouts\":[{\"id\":0,\"position\":{\"x\":614.8478701825558,\"y\":0,\"z\":4,\"width\":664.5030425963489,\"height\":67.18052738336714}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"3 - Quel type de graphique convient le mieux pour représenter la distribution des prix unitaires des produits ?\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"14pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 67.18,
+          "width": 664.50,
+          "x": 614.85,
+          "y": 0.00,
+          "z": 4.00
+        },
+        {
+          "config": "{\"name\":\"16a334849fa54d12f497\",\"layouts\":[{\"id\":0,\"position\":{\"x\":614.8478701825558,\"y\":397.2413793103448,\"z\":6,\"width\":664.5030425963489,\"height\":75.94320486815415}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"4 - Quel type de graphique convient le mieux pour représenter la quantité de produits vendus par pays sur une carte géographique ?\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"14pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 75.94,
+          "width": 664.50,
+          "x": 614.85,
+          "y": 397.24,
+          "z": 6.00
+        },
+        {
+          "config": "{\"name\":\"720f1398641b1b71a682\",\"layouts\":[{\"id\":0,\"position\":{\"x\":603.1643002028397,\"y\":462.9614604462475,\"z\":7,\"width\":676.1866125760649,\"height\":257.0385395537525}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Size\":[{\"queryRef\":\"Sum(activité_2019.quantité)\"}],\"Category\":[{\"queryRef\":\"activité_2019.ville - pays\",\"active\":true}],\"Tooltips\":[{\"queryRef\":\"Sum(activité_2019.quantité)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"activité_2019\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"ville - pays\"},\"Name\":\"activité_2019.ville - pays\",\"NativeReferenceName\":\"ville - pays1\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"quantité\"}},\"Function\":0},\"Name\":\"Sum(activité_2019.quantité)\",\"NativeReferenceName\":\"Somme de quantité1\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'minColor'\"}}}},\"max\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'maxColor'\"}}}},\"nullColoringStrategy\":{\"strategy\":{\"expr\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"activité_2019\"}},\"Property\":\"quantité\"}},\"Function\":0}},\"FillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#2BF203'\"}},\"value\":{\"Literal\":{\"Value\":\"0D\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#F40416'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}],\"mapStyles\":[{\"properties\":{\"mapTheme\":{\"expr\":{\"Literal\":{\"Value\":\"'grayscale'\"}}}}}],\"bubbles\":[{\"properties\":{\"bubbleSize\":{\"expr\":{\"Literal\":{\"Value\":\"-15L\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 257.04,
+          "width": 676.19,
+          "x": 603.16,
+          "y": 462.96,
+          "z": 7.00
+        },
+        {
+          "config": "{\"name\":\"7ae77dc9ac7ad7842db6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":24.82758620689655,\"y\":397.2413793103448,\"z\":2,\"width\":557.8904665314402,\"height\":55.496957403651116}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"2 - Quel type de graphique convient le mieux pour montrer l'évolution du prix unitaire des produits au fil du temps ?\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"14pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 55.50,
+          "width": 557.89,
+          "x": 24.83,
+          "y": 397.24,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"89b1a358b90eed1f7e74\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.223123732251521,\"y\":0,\"z\":0,\"width\":592.9411764705882,\"height\":65.72008113590263}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"1- Quel type de graphique convient le mieux pour comparer la quantité de produits vendus par pays ?\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"14pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 65.72,
+          "width": 592.94,
+          "x": 10.22,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"923c6d251abad52c2563\",\"layouts\":[{\"id\":0,\"position\":{\"x\":614.8478701825558,\"y\":56.95740365111562,\"z\":5,\"width\":664.5030425963489,\"height\":340.2839756592292}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"activité_2019.nom_produit\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(activité_2019.prix_unitaire)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"activité_2019\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"nom_produit\"},\"Name\":\"activité_2019.nom_produit\",\"NativeReferenceName\":\"nom_produit\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"prix_unitaire\"}},\"Function\":1},\"Name\":\"Sum(activité_2019.prix_unitaire)\",\"NativeReferenceName\":\"Moyenne de prix_unitaire\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"prix_unitaire\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 340.28,
+          "width": 664.50,
+          "x": 614.85,
+          "y": 56.96,
+          "z": 5.00
+        },
+        {
+          "config": "{\"name\":\"996dd71524b0909786e3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8.762677484787018,\"y\":56.95740365111562,\"z\":1,\"width\":578.3367139959432,\"height\":303.7728194726166}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"activité_2019.pays\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(activité_2019.quantité)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"activité_2019\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"pays\"},\"Name\":\"activité_2019.pays\",\"NativeReferenceName\":\"pays\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"quantité\"}},\"Function\":0},\"Name\":\"Sum(activité_2019.quantité)\",\"NativeReferenceName\":\"Somme de quantité\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"quantité\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}},\"titleFontSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}}}}],\"valueAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"titleFontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 303.77,
+          "width": 578.34,
+          "x": 8.76,
+          "y": 56.96,
+          "z": 1.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "c954963064623791cf89",
+      "ordinal": 4,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1740a6c669859333555e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":816.6037735849056,\"y\":80,\"z\":4,\"width\":463.39622641509436,\"height\":383.39622641509436,\"tabOrder\":5}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Size\":[{\"queryRef\":\"Sum(activité_2019.quantité)\"}],\"Category\":[{\"queryRef\":\"activité_2019.ville - pays\",\"active\":true}],\"Series\":[{\"queryRef\":\"activité_2019.pays\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"activité_2019\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"quantité\"}},\"Function\":0},\"Name\":\"Sum(activité_2019.quantité)\",\"NativeReferenceName\":\"Quantité\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"ville - pays\"},\"Name\":\"activité_2019.ville - pays\",\"NativeReferenceName\":\"ville - pays\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"pays\"},\"Name\":\"activité_2019.pays\",\"NativeReferenceName\":\"pays\"}]},\"columnProperties\":{\"Sum(activité_2019.quantité)\":{\"displayName\":\"Quantité\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"mapStyles\":[{\"properties\":{\"mapTheme\":{\"expr\":{\"Literal\":{\"Value\":\"'grayscale'\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"activité_2019\"}},\"Property\":\"quantité\"}},\"Function\":0}},\"FillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#41a4ff'\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#12239E'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}],\"legend\":[{\"properties\":{\"labelColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#252423'\"}}}}}}}],\"bubbles\":[{\"properties\":{\"bubbleSize\":{\"expr\":{\"Literal\":{\"Value\":\"-5L\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"backgroundColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#252423'\"}}}}},\"enableBackground\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#a0d1ff'\"}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Quantité par pays'\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}],\"visualHeader\":[{\"properties\":{\"background\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#FFFFFF'\"}}}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 383.40,
+          "width": 463.40,
+          "x": 816.60,
+          "y": 80.00,
+          "z": 4.00
+        },
+        {
+          "config": "{\"name\":\"1fb6917ebd46801e4649\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":1.44,\"z\":3,\"width\":177.12,\"height\":79.2,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"activité_2019.date.Variation.Hiérarchie de dates.Mois\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"activité_2019\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Name\":\"Variation\",\"Property\":\"date\"}},\"Hierarchy\":\"Hiérarchie de dates\"}},\"Level\":\"Mois\"},\"Name\":\"activité_2019.date.Variation.Hiérarchie de dates.Mois\",\"NativeReferenceName\":\"date Mois\"}]},\"expansionStates\":[{\"roles\":[\"Values\"],\"levels\":[{\"queryRefs\":[\"activité_2019.date.Variation.Hiérarchie de dates.Mois\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#252423'\"}}}}}}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"outlineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"padding\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#252423'\"}}}}},\"outlineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}},\"heading\":{\"expr\":{\"Literal\":{\"Value\":\"'Heading4'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"21D\"}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 79.20,
+          "width": 177.12,
+          "x": 0.00,
+          "y": 1.44,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"349b2c0a79932f29e4dd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":160,\"z\":0,\"width\":352,\"height\":288,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(activité_2019.quantité)\"}],\"Category\":[{\"queryRef\":\"activité_2019.pays\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"activité_2019\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"quantité\"}},\"Function\":0},\"Name\":\"Sum(activité_2019.quantité)\",\"NativeReferenceName\":\"Quqntité par pays\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"pays\"},\"Name\":\"activité_2019.pays\",\"NativeReferenceName\":\"pays\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"quantité\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(activité_2019.quantité)\":{\"displayName\":\"Quqntité par pays\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"percentageLabelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}}}}],\"slices\":[{\"properties\":{\"startAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Quantité par pays'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 288.00,
+          "width": 352.00,
+          "x": 0.00,
+          "y": 160.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"61d69425ceb1c0c93475\",\"layouts\":[{\"id\":0,\"position\":{\"x\":352,\"y\":160,\"z\":2,\"width\":176,\"height\":288,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"activité_2019.couleur\"},{\"queryRef\":\"Sum(activité_2019.quantité)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"activité_2019\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"couleur\"},\"Name\":\"activité_2019.couleur\",\"NativeReferenceName\":\"couleur\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"quantité\"},\"Name\":\"Sum(activité_2019.quantité)\",\"NativeReferenceName\":\"Nombre de quantité\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"couleur\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"dataLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top 4 des couleurs'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 288.00,
+          "width": 176.00,
+          "x": 352.00,
+          "y": 160.00,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"70e17c10e8302956334f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":762.2641509433962,\"y\":448.3018867924528,\"z\":8,\"width\":517.7358490566038,\"height\":271.6981132075472,\"tabOrder\":8}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Group\":[{\"queryRef\":\"activité_2019.famille_produit\",\"active\":true}],\"Values\":[{\"queryRef\":\"CountNonNull(activité_2019.pays)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"activité_2019\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"famille_produit\"},\"Name\":\"activité_2019.famille_produit\",\"NativeReferenceName\":\"famille_produit\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"pays\"}},\"Function\":5},\"Name\":\"CountNonNull(activité_2019.pays)\",\"NativeReferenceName\":\"Nombre de pays\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Répartition des familles de produits vendus'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 271.70,
+          "width": 517.74,
+          "x": 762.26,
+          "y": 448.30,
+          "z": 8.00
+        },
+        {
+          "config": "{\"name\":\"807af79c9c2470dc0147\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":80.64,\"z\":6,\"width\":816.48,\"height\":80.64,\"tabOrder\":4}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"activité_2019.code_pays\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"activité_2019\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"code_pays\"},\"Name\":\"activité_2019.code_pays\",\"NativeReferenceName\":\"code_pays\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#252423'\"}}}}},\"outlineWeight\":{\"expr\":{\"Literal\":{\"Value\":\"5D\"}}}}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"padding\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}}}}],\"header\":[{\"properties\":{\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"outlineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Codes des Pays'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}}}}],\"visualHeader\":[{\"properties\":{\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.64,
+          "width": 816.48,
+          "x": 0.00,
+          "y": 80.64,
+          "z": 6.00
+        },
+        {
+          "config": "{\"name\":\"c8b464ea3000797077c1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":7,\"width\":1280,\"height\":80,\"tabOrder\":7}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"RainForest - Résultat de l'exercice 2019\",\"textStyle\":{\"fontSize\":\"32pt\",\"color\":\"#ffffff\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#a0d1ff'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.00,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 7.00
+        },
+        {
+          "config": "{\"name\":\"cb69f7d9e48dd9cec8a1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":448.3018867924528,\"z\":1,\"width\":762.2641509433962,\"height\":271.6981132075472,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(activité_2019.quantité)\"}],\"Category\":[{\"queryRef\":\"activité_2019.date.Variation.Date Hierarchy.Month\",\"active\":true},{\"queryRef\":\"activité_2019.date.Variation.Date Hierarchy.Year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"activité_2019\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"quantité\"}},\"Function\":0},\"Name\":\"Sum(activité_2019.quantité)\",\"NativeReferenceName\":\"Quantite vendue\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Name\":\"Variation\",\"Property\":\"date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"activité_2019.date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"date Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Name\":\"Variation\",\"Property\":\"date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"activité_2019.date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"date Year\"}]},\"columnProperties\":{\"Sum(activité_2019.quantité)\":{\"displayName\":\"Quantite vendue\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}},\"enableBackground\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"seriesLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"lineStyles\":[{\"properties\":{\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"markerShape\":{\"expr\":{\"Literal\":{\"Value\":\"'square'\"}}},\"markerColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}},\"lineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'dashed'\"}}},\"strokeLineJoin\":{\"expr\":{\"Literal\":{\"Value\":\"'round'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Quantité par mois'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"background\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualTooltip\":[{\"properties\":{\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Canvas'\"}}},\"section\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection05ad44b0e44f0c1db159'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 271.70,
+          "width": 762.26,
+          "x": 0.00,
+          "y": 448.30,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"e01b33b23a8f925f6ed3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":528,\"y\":160,\"z\":5,\"width\":288,\"height\":288,\"tabOrder\":6}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"activité_2019.nom_produit\"},{\"queryRef\":\"Sum(activité_2019.quantité)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"activité_2019\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"nom_produit\"},\"Name\":\"activité_2019.nom_produit\",\"NativeReferenceName\":\"Nom du produit\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"quantité\"}},\"Function\":0},\"Name\":\"Sum(activité_2019.quantité)\",\"NativeReferenceName\":\"Quantité\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"quantité\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(activité_2019.quantité)\":{\"displayName\":\"Quantité\"},\"activité_2019.nom_produit\":{\"displayName\":\"Nom du produit\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnHeaders\":[{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 288.00,
+          "width": 288.00,
+          "x": 528.00,
+          "y": 160.00,
+          "z": 5.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

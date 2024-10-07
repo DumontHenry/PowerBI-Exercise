@@ -1,0 +1,9 @@
+{
+  "version": "4.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../Exercise PBI_Rainforest.SemanticModel"
+    },
+    "byConnection": null
+  }
+}

@@ -1,0 +1,2535 @@
+{
+  "compatibilityLevel": 1550,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"activité_2019\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.136.1202.0 (24.09)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Entities": {
+              "activité_2019": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "activité_2019"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "activité 2019": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "activité_2019": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "activité_2019.code_pay": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "activité_2019",
+                    "ConceptualProperty": "code_pays"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "code pay": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "code_pays": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "id pay": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "key pay": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  },
+                  {
+                    "code salary": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "code reimbursement": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "code compensation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "code remuneration": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "code emolument": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "code stipend": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "code wage": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "code recompense": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  }
+                ]
+              },
+              "activité_2019.couleur": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "activité_2019",
+                    "ConceptualProperty": "couleur"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "couleur": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "activité_2019.date": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "activité_2019",
+                    "ConceptualProperty": "date"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "date": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "moment": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "period": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  }
+                ]
+              },
+              "activité_2019.date.variation.date_hierarchy": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "activité_2019",
+                    "Hierarchy": "Date Hierarchy",
+                    "VariationSet": "Variation",
+                    "VariationSource": "date"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "date hierarchy": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "activité_2019.date.variation.date_hierarchy.day": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "activité_2019",
+                    "Hierarchy": "Date Hierarchy",
+                    "HierarchyLevel": "Day",
+                    "VariationSet": "Variation",
+                    "VariationSource": "date"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "day": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date day": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "moment day": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "period day": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  }
+                ]
+              },
+              "activité_2019.date.variation.date_hierarchy.month": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "activité_2019",
+                    "Hierarchy": "Date Hierarchy",
+                    "HierarchyLevel": "Month",
+                    "VariationSet": "Variation",
+                    "VariationSource": "date"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "month": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date month": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date mth": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "mth": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "moment month": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "period month": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  }
+                ]
+              },
+              "activité_2019.date.variation.date_hierarchy.quarter": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "activité_2019",
+                    "Hierarchy": "Date Hierarchy",
+                    "HierarchyLevel": "Quarter",
+                    "VariationSet": "Variation",
+                    "VariationSource": "date"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "quarter": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date quarter": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date qtr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.833
+                    }
+                  },
+                  {
+                    "qtr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.818
+                    }
+                  },
+                  {
+                    "moment quarter": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "period quarter": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  }
+                ]
+              },
+              "activité_2019.date.variation.date_hierarchy.year": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "activité_2019",
+                    "Hierarchy": "Date Hierarchy",
+                    "HierarchyLevel": "Year",
+                    "VariationSet": "Variation",
+                    "VariationSource": "date"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "year": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date year": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date yr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "yr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "moment year": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "period year": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  }
+                ]
+              },
+              "activité_2019.famille_produit": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "activité_2019",
+                    "ConceptualProperty": "famille_produit"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "famille produit": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "famille_produit": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "activité_2019.id_fournisseur": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "activité_2019",
+                    "ConceptualProperty": "id_fournisseur"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "id fournisseur": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "id_fournisseur": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "identification fournisseur": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "identity fournisseur": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "identifier fournisseur": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "credential fournisseur": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  }
+                ]
+              },
+              "activité_2019.id_produit": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "activité_2019",
+                    "ConceptualProperty": "id_produit"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "id produit": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "id_produit": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "identification produit": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "identity produit": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "identifier produit": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "credential produit": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  }
+                ]
+              },
+              "activité_2019.nom": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "activité_2019",
+                    "ConceptualProperty": "nom"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "nom": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "activité_2019.nom_fournisseur": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "activité_2019",
+                    "ConceptualProperty": "nom_fournisseur"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "nom fournisseur": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "nom_fournisseur": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "activité_2019.nom_produit": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "activité_2019",
+                    "ConceptualProperty": "nom_produit"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "nom produit": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "nom_produit": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "Nom du produit": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "activité_2019.numéro_client": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "activité_2019",
+                    "ConceptualProperty": "numéro_client"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "numéro client": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "numéro_client": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "numéro customer": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "numéro shopper": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "numéro consumer": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "numéro patron": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "numéro user": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "numéro buyer": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "numéro punter": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "numéro purchaser": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "numéro regular": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  }
+                ]
+              },
+              "activité_2019.pay": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "activité_2019",
+                    "ConceptualProperty": "pays"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "pay": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "salary": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "reimbursement": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "compensation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "remuneration": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "emolument": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "stipend": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "wage": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "recompense": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "fee": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "hire": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  }
+                ]
+              },
+              "activité_2019.prenom": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "activité_2019",
+                    "ConceptualProperty": "prenom"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "prenom": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "activité_2019.prix_unitaire": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "activité_2019",
+                    "ConceptualProperty": "prix_unitaire"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "prix unitaire": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "prix_unitaire": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  }
+                ]
+              },
+              "activité_2019.quantité": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "activité_2019",
+                    "ConceptualProperty": "quantité"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "quantité": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "activité_2019.ville": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "activité_2019",
+                    "ConceptualProperty": "ville"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "ville": {
+                      "State": "Generated"
+                    }
+                  }
+                ]
+              },
+              "activité_2019.ville__pay": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "activité_2019",
+                    "ConceptualProperty": "ville - pays"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "ville - pay": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "ville pay": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "ville - salary": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "ville - reimbursement": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "ville - compensation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "ville - remuneration": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "ville - emolument": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "ville - stipend": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.508
+                    }
+                  },
+                  {
+                    "ville salary": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "ville reimbursement": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "ville compensation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "ville remuneration": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  }
+                ]
+              }
+            },
+            "Language": "en-US",
+            "Relationships": {
+              "activité_2019_date_has_variation_date_hierarchy": {
+                "Binding": {
+                  "ConceptualEntity": "activité_2019"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "activité_2019.date.variation.date_hierarchy"
+                      },
+                      "Subject": {
+                        "Role": "activité_2019.date"
+                      }
+                    },
+                    "ID": "dates_have_date_hierarchies",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "activité_2019.date": {
+                    "Target": {
+                      "Entity": "activité_2019.date"
+                    }
+                  },
+                  "activité_2019.date.variation.date_hierarchy": {
+                    "Target": {
+                      "Entity": "activité_2019.date.variation.date_hierarchy"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "activité_2019_date_variation_date_hierarchy_has_day": {
+                "Binding": {
+                  "ConceptualEntity": "activité_2019"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "activité_2019.date.variation.date_hierarchy.day"
+                      },
+                      "Subject": {
+                        "Role": "activité_2019.date.variation.date_hierarchy"
+                      }
+                    },
+                    "ID": "date_hierarchies_have_days",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "activité_2019.date.variation.date_hierarchy": {
+                    "Target": {
+                      "Entity": "activité_2019.date.variation.date_hierarchy"
+                    }
+                  },
+                  "activité_2019.date.variation.date_hierarchy.day": {
+                    "Target": {
+                      "Entity": "activité_2019.date.variation.date_hierarchy.day"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "activité_2019_date_variation_date_hierarchy_has_month": {
+                "Binding": {
+                  "ConceptualEntity": "activité_2019"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "activité_2019.date.variation.date_hierarchy.month"
+                      },
+                      "Subject": {
+                        "Role": "activité_2019.date.variation.date_hierarchy"
+                      }
+                    },
+                    "ID": "date_hierarchies_have_months",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "activité_2019.date.variation.date_hierarchy": {
+                    "Target": {
+                      "Entity": "activité_2019.date.variation.date_hierarchy"
+                    }
+                  },
+                  "activité_2019.date.variation.date_hierarchy.month": {
+                    "Target": {
+                      "Entity": "activité_2019.date.variation.date_hierarchy.month"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "activité_2019_date_variation_date_hierarchy_has_quarter": {
+                "Binding": {
+                  "ConceptualEntity": "activité_2019"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "activité_2019.date.variation.date_hierarchy.quarter"
+                      },
+                      "Subject": {
+                        "Role": "activité_2019.date.variation.date_hierarchy"
+                      }
+                    },
+                    "ID": "date_hierarchies_have_quarters",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "activité_2019.date.variation.date_hierarchy": {
+                    "Target": {
+                      "Entity": "activité_2019.date.variation.date_hierarchy"
+                    }
+                  },
+                  "activité_2019.date.variation.date_hierarchy.quarter": {
+                    "Target": {
+                      "Entity": "activité_2019.date.variation.date_hierarchy.quarter"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "activité_2019_date_variation_date_hierarchy_has_year": {
+                "Binding": {
+                  "ConceptualEntity": "activité_2019"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "activité_2019.date.variation.date_hierarchy.year"
+                      },
+                      "Subject": {
+                        "Role": "activité_2019.date.variation.date_hierarchy"
+                      }
+                    },
+                    "ID": "date_hierarchies_have_years",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "activité_2019.date.variation.date_hierarchy": {
+                    "Target": {
+                      "Entity": "activité_2019.date.variation.date_hierarchy"
+                    }
+                  },
+                  "activité_2019.date.variation.date_hierarchy.year": {
+                    "Target": {
+                      "Entity": "activité_2019.date.variation.date_hierarchy.year"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "activité_2019_has_code_pay": {
+                "Binding": {
+                  "ConceptualEntity": "activité_2019"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "activité_2019.code_pay"
+                      },
+                      "Subject": {
+                        "Role": "activité_2019"
+                      }
+                    },
+                    "ID": "activité_2019_have_code_pays",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "activité_2019": {
+                    "Target": {
+                      "Entity": "activité_2019"
+                    }
+                  },
+                  "activité_2019.code_pay": {
+                    "Target": {
+                      "Entity": "activité_2019.code_pay"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "activité_2019_has_couleur": {
+                "Binding": {
+                  "ConceptualEntity": "activité_2019"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "activité_2019.couleur"
+                      },
+                      "Subject": {
+                        "Role": "activité_2019"
+                      }
+                    },
+                    "ID": "activité_2019_have_couleurs",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "activité_2019": {
+                    "Target": {
+                      "Entity": "activité_2019"
+                    }
+                  },
+                  "activité_2019.couleur": {
+                    "Target": {
+                      "Entity": "activité_2019.couleur"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "activité_2019_has_date": {
+                "Binding": {
+                  "ConceptualEntity": "activité_2019"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "activité_2019.date"
+                      },
+                      "Subject": {
+                        "Role": "activité_2019"
+                      }
+                    },
+                    "ID": "activité_2019_have_dates",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "activité_2019": {
+                    "Target": {
+                      "Entity": "activité_2019"
+                    }
+                  },
+                  "activité_2019.date": {
+                    "Target": {
+                      "Entity": "activité_2019.date"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "activité_2019_has_famille_produit": {
+                "Binding": {
+                  "ConceptualEntity": "activité_2019"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "activité_2019.famille_produit"
+                      },
+                      "Subject": {
+                        "Role": "activité_2019"
+                      }
+                    },
+                    "ID": "activité_2019_have_famille_produits",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "activité_2019": {
+                    "Target": {
+                      "Entity": "activité_2019"
+                    }
+                  },
+                  "activité_2019.famille_produit": {
+                    "Target": {
+                      "Entity": "activité_2019.famille_produit"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "activité_2019_has_id_fournisseur": {
+                "Binding": {
+                  "ConceptualEntity": "activité_2019"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "activité_2019.id_fournisseur"
+                      },
+                      "Subject": {
+                        "Role": "activité_2019"
+                      }
+                    },
+                    "ID": "activité_2019_have_id_fournisseurs",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "activité_2019": {
+                    "Target": {
+                      "Entity": "activité_2019"
+                    }
+                  },
+                  "activité_2019.id_fournisseur": {
+                    "Target": {
+                      "Entity": "activité_2019.id_fournisseur"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "activité_2019_has_id_produit": {
+                "Binding": {
+                  "ConceptualEntity": "activité_2019"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "activité_2019.id_produit"
+                      },
+                      "Subject": {
+                        "Role": "activité_2019"
+                      }
+                    },
+                    "ID": "activité_2019_have_id_produits",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "activité_2019": {
+                    "Target": {
+                      "Entity": "activité_2019"
+                    }
+                  },
+                  "activité_2019.id_produit": {
+                    "Target": {
+                      "Entity": "activité_2019.id_produit"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "activité_2019_has_nom": {
+                "Binding": {
+                  "ConceptualEntity": "activité_2019"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "activité_2019.nom"
+                      },
+                      "Subject": {
+                        "Role": "activité_2019"
+                      }
+                    },
+                    "ID": "activité_2019_have_nom",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "activité_2019": {
+                    "Target": {
+                      "Entity": "activité_2019"
+                    }
+                  },
+                  "activité_2019.nom": {
+                    "Target": {
+                      "Entity": "activité_2019.nom"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "activité_2019_has_nom_fournisseur": {
+                "Binding": {
+                  "ConceptualEntity": "activité_2019"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "activité_2019.nom_fournisseur"
+                      },
+                      "Subject": {
+                        "Role": "activité_2019"
+                      }
+                    },
+                    "ID": "activité_2019_have_nom_fournisseurs",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "activité_2019": {
+                    "Target": {
+                      "Entity": "activité_2019"
+                    }
+                  },
+                  "activité_2019.nom_fournisseur": {
+                    "Target": {
+                      "Entity": "activité_2019.nom_fournisseur"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "activité_2019_has_nom_produit": {
+                "Binding": {
+                  "ConceptualEntity": "activité_2019"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "activité_2019.nom_produit"
+                      },
+                      "Subject": {
+                        "Role": "activité_2019"
+                      }
+                    },
+                    "ID": "activité_2019_have_nom_produits",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "activité_2019": {
+                    "Target": {
+                      "Entity": "activité_2019"
+                    }
+                  },
+                  "activité_2019.nom_produit": {
+                    "Target": {
+                      "Entity": "activité_2019.nom_produit"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "activité_2019_has_numéro_client": {
+                "Binding": {
+                  "ConceptualEntity": "activité_2019"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "activité_2019.numéro_client"
+                      },
+                      "Subject": {
+                        "Role": "activité_2019"
+                      }
+                    },
+                    "ID": "activité_2019_have_numéro_clients",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "activité_2019": {
+                    "Target": {
+                      "Entity": "activité_2019"
+                    }
+                  },
+                  "activité_2019.numéro_client": {
+                    "Target": {
+                      "Entity": "activité_2019.numéro_client"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "activité_2019_has_pay": {
+                "Binding": {
+                  "ConceptualEntity": "activité_2019"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "activité_2019.pay"
+                      },
+                      "Subject": {
+                        "Role": "activité_2019"
+                      }
+                    },
+                    "ID": "activité_2019_have_pays",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "activité_2019": {
+                    "Target": {
+                      "Entity": "activité_2019"
+                    }
+                  },
+                  "activité_2019.pay": {
+                    "Target": {
+                      "Entity": "activité_2019.pay"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "activité_2019_has_prenom": {
+                "Binding": {
+                  "ConceptualEntity": "activité_2019"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "activité_2019.prenom"
+                      },
+                      "Subject": {
+                        "Role": "activité_2019"
+                      }
+                    },
+                    "ID": "activité_2019_have_prenoms",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "activité_2019": {
+                    "Target": {
+                      "Entity": "activité_2019"
+                    }
+                  },
+                  "activité_2019.prenom": {
+                    "Target": {
+                      "Entity": "activité_2019.prenom"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "activité_2019_has_prix_unitaire": {
+                "Binding": {
+                  "ConceptualEntity": "activité_2019"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "activité_2019.prix_unitaire"
+                      },
+                      "Subject": {
+                        "Role": "activité_2019"
+                      }
+                    },
+                    "ID": "activité_2019_have_prix_unitaires",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "activité_2019": {
+                    "Target": {
+                      "Entity": "activité_2019"
+                    }
+                  },
+                  "activité_2019.prix_unitaire": {
+                    "Target": {
+                      "Entity": "activité_2019.prix_unitaire"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "activité_2019_has_quantité": {
+                "Binding": {
+                  "ConceptualEntity": "activité_2019"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "activité_2019.quantité"
+                      },
+                      "Subject": {
+                        "Role": "activité_2019"
+                      }
+                    },
+                    "ID": "activité_2019_have_quantité",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "activité_2019": {
+                    "Target": {
+                      "Entity": "activité_2019"
+                    }
+                  },
+                  "activité_2019.quantité": {
+                    "Target": {
+                      "Entity": "activité_2019.quantité"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "activité_2019_has_ville": {
+                "Binding": {
+                  "ConceptualEntity": "activité_2019"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "activité_2019.ville"
+                      },
+                      "Subject": {
+                        "Role": "activité_2019"
+                      }
+                    },
+                    "ID": "activité_2019_have_ville",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "activité_2019": {
+                    "Target": {
+                      "Entity": "activité_2019"
+                    }
+                  },
+                  "activité_2019.ville": {
+                    "Target": {
+                      "Entity": "activité_2019.ville"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "activité_2019_has_ville__pay": {
+                "Binding": {
+                  "ConceptualEntity": "activité_2019"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "activité_2019.ville__pay"
+                      },
+                      "Subject": {
+                        "Role": "activité_2019"
+                      }
+                    },
+                    "ID": "activité_2019_have_ville__pays",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "activité_2019": {
+                    "Target": {
+                      "Entity": "activité_2019"
+                    }
+                  },
+                  "activité_2019.ville__pay": {
+                    "Target": {
+                      "Entity": "activité_2019.ville__pay"
+                    }
+                  }
+                },
+                "State": "Generated"
+              }
+            },
+            "Version": "3.5.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "7f731287-18c0-4e17-acec-7e737404139e",
+        "fromColumn": "date",
+        "fromTable": "activité_2019",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_f61f9dd2-ec7b-459f-b709-2e6b98e3cd20"
+      }
+    ],
+    "sourceQueryCulture": "fr-BE",
+    "tables": [
+      {
+        "name": "activité_2019",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "numéro_client",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "cb0490e7-7655-4205-b5b5-c27d7820c635",
+            "sourceColumn": "numéro_client",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "prenom",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "35b5d163-4c20-4509-b7d8-b2e3b5da2bb4",
+            "sourceColumn": "prenom",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "nom",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4afa624b-b10e-465b-8f55-24630aba0733",
+            "sourceColumn": "nom",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "code_pays",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "00ac4ff1-0f49-47a5-bcc7-ab940e77351d",
+            "sourceColumn": "code_pays",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "pays",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5e6fa863-ab52-4b54-a53b-d00cfcef4cf6",
+            "sourceColumn": "pays",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ville",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5cb89a78-09ee-4d78-8e62-b6d5b1f5fd89",
+            "sourceColumn": "ville",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "id_produit",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "264228f8-169a-45b8-a210-49cdca9b07d5",
+            "sourceColumn": "id_produit",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "nom_produit",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cb777d5d-4985-4c5c-a4e2-54d4c1da294a",
+            "sourceColumn": "nom_produit",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "famille_produit",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "41d5868c-a83c-42e3-b5cb-1b909a713803",
+            "sourceColumn": "famille_produit",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "couleur",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "db8e4e62-280f-4d98-8b5a-b088078dca33",
+            "sourceColumn": "couleur",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "prix_unitaire",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ed24a6ba-931b-425d-81e1-9d854225039e",
+            "sourceColumn": "prix_unitaire",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "id_fournisseur",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "fea67d4a-536d-4cec-b66d-74cd509a6569",
+            "sourceColumn": "id_fournisseur",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "nom_fournisseur",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a83d9b92-cb1a-4506-a725-a82f8c8ff599",
+            "sourceColumn": "nom_fournisseur",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "quantité",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "144e8c0c-a327-4a92-98ff-33654abb1052",
+            "sourceColumn": "quantité",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "2de99099-51ba-4d04-9937-ebf8b0eb405c",
+            "sourceColumn": "date",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_f61f9dd2-ec7b-459f-b709-2e6b98e3cd20"
+                },
+                "isDefault": true,
+                "relationship": "7f731287-18c0-4e17-acec-7e737404139e"
+              }
+            ]
+          },
+          {
+            "name": "ville - pays",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "'activité_2019'[ville]&\"-\"&'activité_2019'[pays]",
+            "isDataTypeInferred": true,
+            "lineageTag": "730c2134-74b0-49af-9a29-40df3156c253",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "bd830ae3-46df-4b01-a4ac-a0fea07b705f",
+        "partitions": [
+          {
+            "name": "activité_2019",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\henry\\OneDrive\\Bureau\\Microsoft Docs and notes\\PL-300 Power BI\\Wild Code School formation\\Module 4\\02_03_rainforest_global_2019.xlsx\"), null, true),",
+                "    activité_2019_Sheet = Source{[Item=\"activité_2019\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(activité_2019_Sheet, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"id_client\", Int64.Type}, {\"prenom\", type text}, {\"nom\", type text}, {\"code_pays\", type text}, {\"pays\", type text}, {\"ville\", type text}, {\"id_produit\", Int64.Type}, {\"nom_produit\", type text}, {\"famille_produit\", type text}, {\"couleur\", type text}, {\"prix_unitaire\", Int64.Type}, {\"id_fournisseur\", Int64.Type}, {\"nom_fournisseur\", type text}, {\"quantité\", Int64.Type}, {\"date\", type date}}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type\",{{\"id_client\", \"numéro_client\"}}),",
+                "    #\"Filtered Rows\" = Table.SelectRows(#\"Renamed Columns\", each true)",
+                "in",
+                "    #\"Filtered Rows\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_8baeae39-77de-4745-8a5b-4ef8c7886a58",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "394df6d7-4cdd-4ce4-b15d-e602b1e8e08c",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "2e33292b-e00e-4ab3-9f80-ab8bb75d38a0",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "a112784f-b8a9-4af4-a69d-1c87333e1aa9",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "1eb34173-285a-4d44-8bc9-d4d839d7c0dd",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "10d4afb3-67ef-4d69-9f82-6719a34de18d",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "8a9a0659-7e44-4d95-a651-f54f81e9eae6",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "cc07e477-a48c-44ed-9fc4-f1237964aed6",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "594626fb-e48d-481c-9c8e-ba4eb8948d3c",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "d4c5e374-60ee-480a-9431-abd4d7666426",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "87d13d83-c0c1-43c9-b289-5fd6b5bf36ec",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "20f1e9e9-c329-49e7-b134-c8209dfd7985",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "cc4c8b2f-95c4-4048-be08-842f76f8d59d"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "2a2d9d53-312e-42dd-9964-b24138cf96db",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_8baeae39-77de-4745-8a5b-4ef8c7886a58",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_f61f9dd2-ec7b-459f-b709-2e6b98e3cd20",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "770d2aef-8b25-42f9-a645-3922a5eb157e",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "5fb50f67-34d8-41b4-ac84-267d7cb16f77",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "174df39d-e27e-41ac-b954-d2bc4559ae93",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "6648ef12-bcd8-471a-abb3-48bd0b37e74f",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "16f706a3-ff75-47c9-90ee-d8f76d4369de",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "1e4454c0-2879-409a-9233-f5be234234f8",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "6c6a799e-cd1b-457a-8821-aacbeaa446e7",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "74447673-35c7-4194-b87f-2afe30ef6a8e",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "ae113d81-6814-4d64-a186-bc6dc7878468",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "4ac7ed94-234d-4233-a60d-fac072943aec",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "6fdd2712-3dd7-4ca0-bcfa-674067053704",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "8bfa4a2f-eb68-4716-92fd-d137cce67933"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "878870c6-c679-4211-b7da-a97e4d4cc234",
+        "partitions": [
+          {
+            "name": "LocalDateTable_f61f9dd2-ec7b-459f-b709-2e6b98e3cd20",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('activité_2019'[date])), 1, 1), Date(Year(MAX('activité_2019'[date])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      }
+    ]
+  }
+}

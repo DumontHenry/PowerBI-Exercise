@@ -1,0 +1,81 @@
+{
+  "config": "{\"version\":\"5.57\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU08\",\"version\":\"5.58\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU08",
+            "path": "BaseThemes/CY24SU08.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "08f92c19be6c38cedaa5",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1aefd111ed2abe53e2d8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":0,\"z\":0,\"width\":575,\"height\":457.5,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Situation famille.Nom\"},{\"queryRef\":\"Situation famille.Situation familliale\"},{\"queryRef\":\"Sum(Apport.Apport)\"},{\"queryRef\":\"Sum(Demandes de pret.Montant opération)\"},{\"queryRef\":\"Sum(Demandes de pret.Durée)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Apport\",\"Type\":0},{\"Name\":\"s\",\"Entity\":\"Situation famille\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"Demandes de pret\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Apport\"}},\"Function\":0},\"Name\":\"Sum(Apport.Apport)\",\"NativeReferenceName\":\"Sum of Apport\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Nom\"},\"Name\":\"Situation famille.Nom\",\"NativeReferenceName\":\"Nom\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Situation familliale\"},\"Name\":\"Situation famille.Situation familliale\",\"NativeReferenceName\":\"Situation familliale\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Montant opération\"}},\"Function\":0},\"Name\":\"Sum(Demandes de pret.Montant opération)\",\"NativeReferenceName\":\"Sum of Montant opération\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Durée\"},\"Name\":\"Sum(Demandes de pret.Durée)\",\"NativeReferenceName\":\"Durée\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Apport\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'ContrastAlternatingRows'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"9f09e27eecd4c1499514\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Situation famille\"}},\"Property\":\"Situation familliale\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Situation famille\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Situation familliale\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Marié'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{},\"isHiddenInViewMode\":false}]",
+          "height": 457.50,
+          "width": 575.00,
+          "x": 10.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Year",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "9ccc81555e97ff840f83",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1fa799199d919583b6d9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":268.75,\"z\":1,\"width\":571.25,\"height\":335,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(Demandes de pret.Montant opération)\"}],\"Category\":[{\"queryRef\":\"Demandes de pret.Date de demande.Variation.Date Hierarchy.Year\",\"active\":true}],\"Series\":[{\"queryRef\":\"Demandes de pret.Accord\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Demandes de pret\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Montant opération\"}},\"Function\":0},\"Name\":\"Sum(Demandes de pret.Montant opération)\",\"NativeReferenceName\":\"Sum of Montant opération\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Date de demande\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"Demandes de pret.Date de demande.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Date de demande Year\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Accord\"},\"Name\":\"Demandes de pret.Accord\",\"NativeReferenceName\":\"Accord\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Date de demande\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[{\"name\":\"46d335044dfa1d743b6d\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Demandes de pret\"}},\"Property\":\"Accord\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Demandes de pret\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Accord\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'O'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{},\"isHiddenInViewMode\":false}]",
+          "height": 335.00,
+          "width": 571.25,
+          "x": 10.00,
+          "y": 268.75,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"67a11e2f187896cf5581\",\"layouts\":[{\"id\":0,\"position\":{\"x\":495,\"y\":0,\"z\":2,\"width\":427.5,\"height\":253.75,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"hundredPercentStackedColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(Demandes de pret.Montant opération)\"}],\"Category\":[{\"queryRef\":\"Demandes de pret.Date de demande.Variation.Date Hierarchy.Year\",\"active\":true}],\"Series\":[{\"queryRef\":\"Demandes de pret.Accord\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Demandes de pret\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Montant opération\"}},\"Function\":0},\"Name\":\"Sum(Demandes de pret.Montant opération)\",\"NativeReferenceName\":\"Sum of Montant opération\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Date de demande\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"Demandes de pret.Date de demande.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Date de demande Year\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Accord\"},\"Name\":\"Demandes de pret.Accord\",\"NativeReferenceName\":\"Accord\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Date de demande\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[{\"name\":\"e3a93b9c084dfbdb8b90\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Demandes de pret\"}},\"Property\":\"Accord\"}},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 253.75,
+          "width": 427.50,
+          "x": 495.00,
+          "y": 0.00,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"d0563a792ab4954d7596\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":0,\"z\":0,\"width\":485,\"height\":256.25,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Demandes de pret.Date de demande.Variation.Date Hierarchy.Year\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Demandes de pret.Montant opération)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Demandes de pret\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Date de demande\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"Demandes de pret.Date de demande.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Date de demande Year\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Montant opération\"}},\"Function\":0},\"Name\":\"Sum(Demandes de pret.Montant opération)\",\"NativeReferenceName\":\"Sum of Montant opération\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Date de demande\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 256.25,
+          "width": 485.00,
+          "x": 10.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

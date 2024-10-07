@@ -1,0 +1,87 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 124.20393361361053,
+            "y": -10
+          },
+          "nodeIndex": "Agences",
+          "nodeLineageTag": "cb60c30f-509d-4886-885f-84a73ea6b331",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 532.02306372286444,
+            "y": 108.47651722844284
+          },
+          "nodeIndex": "Apport",
+          "nodeLineageTag": "12c33600-3d96-49b6-857f-ee341397dce0",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 246.72636225857923,
+            "y": 194.81641865081224
+          },
+          "nodeIndex": "Demandes de pret",
+          "nodeLineageTag": "d78e35f9-297b-46ad-b3f7-e3c967271b1e",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 806.02306372286444,
+            "y": 252.92065646517165
+          },
+          "nodeIndex": "Situation famille",
+          "nodeLineageTag": "10c10ec1-2f8e-4958-a6c4-6c65a86cd88d",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10,
+            "y": 519.84131293034329
+          },
+          "nodeIndex": "Situation pro",
+          "nodeLineageTag": "64bdcd26-f26b-4caa-8035-bb9d9606caf9",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}
